@@ -21,7 +21,9 @@ class QuestionFactory extends Factory
             'body' => fake()->paragraphs(rand(3,7),true),
             'views' => rand(0,10),
             'answers' => rand(0,10),
-            'votes' => rand(0,10),
+            'votes' => rand(-5,10),
+            'user_id' => rand(1,10),
+            'best_answer_id' => 1
         ];
     }
 }
